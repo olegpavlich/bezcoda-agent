@@ -34,23 +34,26 @@
 
 ## Скачать
 
-Доступна первая тестовая сборка **0.1.7-alpha.2.20261007.1 для Windows x64**.
+Текущий выпуск — **0.2.1-rc.3.20261102.1**.
 
-[**Скачать установщик Windows x64**](https://github.com/olegpavlich/bezcoda-agent/releases/download/v0.1.7-alpha.2.20261007.1/bezcoda-agent-0.1.7-alpha.2.20261007.1-win-x64-unsigned.exe) · [Описание выпуска и контрольная сумма](https://github.com/olegpavlich/bezcoda-agent/releases/tag/v0.1.7-alpha.2.20261007.1)
+| Поставка | Файл |
+| --- | --- |
+| Desktop Windows x64 | [Установщик EXE](https://github.com/olegpavlich/bezcoda-agent/releases/download/v0.2.1-rc.3.20261102.1/bezcoda-agent-0.2.1-rc.3.20261102.1-win-x64-unsigned.exe) |
+| Desktop Ubuntu 22.04 x64 | [Пакет DEB](https://github.com/olegpavlich/bezcoda-agent/releases/download/v0.2.1-rc.3.20261102.1/bezcoda-agent-0.2.1-rc.3.20261102.1-linux-amd64-unsigned.deb) |
+| Web / служба Windows x64 | [Автономный архив](https://github.com/olegpavlich/bezcoda-agent/releases/download/v0.2.1-rc.3.20261102.1/bezcoda-agent-0.2.1-rc.3.20261102.1-win-x64-service.tar.gz) |
+| Web / служба Linux x64 | [Автономный архив](https://github.com/olegpavlich/bezcoda-agent/releases/download/v0.2.1-rc.3.20261102.1/bezcoda-agent-0.2.1-rc.3.20261102.1-linux-x64-service.tar.gz) |
 
-Сборка предварительная, без цифровой подписи: Windows может показывать неизвестного издателя. Обновления устанавливаются вручную. Ограничения и выполненные проверки перечислены в описании выпуска.
+[Описание выпуска](https://github.com/olegpavlich/bezcoda-agent/releases/tag/v0.2.1-rc.3.20261102.1) · [Контрольные суммы SHA-256](https://github.com/olegpavlich/bezcoda-agent/releases/download/v0.2.1-rc.3.20261102.1/SHA256SUMS.txt) · [Установка и обновление служб](INSTALL.md)
 
-Другие версии публикуются в [GitHub Releases](https://github.com/olegpavlich/bezcoda-agent/releases). Автоматические архивы **Source code** содержат файлы этой страницы, а не установщик приложения.
+Windows-установщик не подписан: Windows может показывать неизвестного издателя. Desktop Windows получает обновления из GitHub Releases; службы и Linux Desktop обновляются вручную. Архивы служб включают собственные Node, Python и pnpm.
+
+Автоматические архивы **Source code** содержат документацию этого публичного репозитория. Готовые приложения скачивайте из таблицы выше.
 
 ## Плагины
 
-[Первый набор плагинов](https://github.com/olegpavlich/bezcoda-agent/releases/tag/plugins-0.1.7-alpha.2.20261007.2) доступен через маркетплейс внутри Агента:
+Обязательный профиль БезКода входит в поставку. Координатор и другие дополнительные плагины устанавливаются через менеджер плагинов из совместимых архивов. В этот выпуск отдельные архивы плагинов не включены.
 
-- **Проверка действий** — экспериментальная проверка вызовов инструментов моделью; может расходовать дополнительные токены.
-- **Команды агентов** — работа нескольких помощников над задачей.
-- **Помощник Codex** — делегирование задач Codex; требует отдельного входа и настройки профиля.
-
-Голосовой плагин в этот набор не включён: его текущий распознаватель не поддерживает русский язык.
+Ранее установленный Координатор сохраняет данные и состояние включения при обновлении. Перед заменой старой поставки выполните инструкции [обновления](INSTALL.md): файлы установленного плагина могут ссылаться на прежний каталог приложения.
 
 ## Первый запуск
 
